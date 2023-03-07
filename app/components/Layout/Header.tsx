@@ -1,4 +1,3 @@
-import { CartBag } from '@app/components/CartBag/CartBag';
 import { NavBar } from '@app/components/Layout/NavBar/NavBar';
 
 const Header = () => (
@@ -8,9 +7,6 @@ const Header = () => (
         <h2 className="flex-1">
           <a href="/">TALI$A KIDD</a>
         </h2>
-        <div>
-          <CartBag />
-        </div>
         <div>
           <NavBar />
         </div>

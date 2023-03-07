@@ -662,25 +662,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/ecom@npm:^1.0.78":
-  version: 1.0.78
-  resolution: "@wix/ecom@npm:1.0.78"
+"@wix/data-backend-public-sdk-poc@npm:^1.0.0":
+  version: 1.0.32
+  resolution: "@wix/data-backend-public-sdk-poc@npm:1.0.32"
   dependencies:
     "@wix/metro-runtime": ^1.0.0
     "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
     "@wix/sdk-types": ^1.0.0
-  checksum: 31c861f324ad38c90bcbe7e6bef1ad819635d96389710feefb3e4c3c42c85e5c611ec96128738b466dda7f05ed3a50144a92436456037cad6fb877add0478bbc
-  languageName: node
-  linkType: hard
-
-"@wix/events@npm:^1.0.35":
-  version: 1.0.35
-  resolution: "@wix/events@npm:1.0.35"
-  dependencies:
-    "@wix/metro-runtime": ^1.0.0
-    "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
-    "@wix/sdk-types": ^1.0.0
-  checksum: c7d20be23368c524769c22b5732ed2a85173cc8ddc49c6fd7045c9fdcc3f22ff3379b8bd1cc02f2452240870d7de9b6eeeaeada97a7c8fd875500335be9e0e31
+  checksum: 1a0bc9743d51bef4e24ba51d207560d5c75af294afaa11d1748b8d3597ccbe89543982d43a6d9316e00de677e3547ee45d0df8ad9735d4aad6bdc5295c322862
   languageName: node
   linkType: hard
 
@@ -818,17 +807,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix/redirects-api@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@wix/redirects-api@npm:1.0.7"
-  dependencies:
-    "@wix/metro-runtime": ^1.0.0
-    "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
-    "@wix/sdk-types": ^1.0.0
-  checksum: fe024d4e8962473a560cf3b6ff7b58b6eaccbe779ec8c80abb20ce0267b1a44e4451b45f3b7e23cbfb209606f5463bbd3a8395329768873a28f18c1b11c458f6
-  languageName: node
-  linkType: hard
-
 "@wix/sdk-types@npm:^1.0.0":
   version: 1.1.15
   resolution: "@wix/sdk-types@npm:1.1.15"
@@ -844,17 +822,6 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.20.13
   checksum: d25f135f404d077d3db41abc55579ae9c956ec099d47203c03877595982a1043d19275f1d4569cbb5f521d1b9fd4b9b32a475c88840e814b60aaa8198f24b509
-  languageName: node
-  linkType: hard
-
-"@wix/stores@npm:^1.0.16":
-  version: 1.0.16
-  resolution: "@wix/stores@npm:1.0.16"
-  dependencies:
-    "@wix/metro-runtime": ^1.0.0
-    "@wix/motion-edm-autogen-query-wrapper": ^1.0.0
-    "@wix/sdk-types": ^1.0.0
-  checksum: 8bfd1133a25db1604831bbe4d0728ea63e9992c0e82a72b37026c183f6553f9a7837803295b0291c537a61f19084ef3122629f568dc998da383de943f9cd8dc5
   languageName: node
   linkType: hard
 
@@ -5206,9 +5173,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wix-events-nextjs@workspace:.":
+"wix-education-nextjs@workspace:.":
   version: 0.0.0-use.local
-  resolution: "wix-events-nextjs@workspace:."
+  resolution: "wix-education-nextjs@workspace:."
   dependencies:
     "@tanstack/react-query": ^4.18.0
     "@types/cookie": ^0.5.1
@@ -5216,10 +5183,7 @@ __metadata:
     "@types/react": 18.0.24
     "@types/react-dom": 18.0.8
     "@wix/api-client": ^1.1.33
-    "@wix/ecom": ^1.0.78
-    "@wix/events": ^1.0.35
-    "@wix/redirects-api": ^1.0.7
-    "@wix/stores": ^1.0.16
+    "@wix/data-backend-public-sdk-poc": ^1.0.0
     autoprefixer: ^10.4.13
     body-scroll-lock: ^4.0.0-beta.0
     cookie: ^0.5.0
