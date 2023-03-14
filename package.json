@@ -6,7 +6,7 @@
     "dev": "next dev",
     "debug": "NODE_OPTIONS='--inspect' next dev -p 3005",
     "test": "",
-    "build": "next build",
+    "build": "node add-collections.js && next build",
     "start": "next start",
     "lint": "next lint --fix"
   },

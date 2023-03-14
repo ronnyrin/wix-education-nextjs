@@ -3,7 +3,11 @@ import Image from 'next/image';
 import { PLACEHOLDER_IMAGE } from '../../../src/constants';
 
 function getImageUrlForMedia(media: string, width: number, height: number) {
-  return wixMedia.getScaledToFillImageUrl(media, width, height, {});
+  if (media.startsWith('wix:image')) {
+    return wixMedia.getScaledToFillImageUrl(media, width, height, {});
+  } else {
+    return media;
+  }
 }
 
 export function WixMediaImage({
@@ -22,7 +26,7 @@ export function WixMediaImage({
     : PLACEHOLDER_IMAGE;
   return (
     <div className={`flex items-center justify-center`}>
-      <div className="overflow-hidden  cursor-pointer relative group w-full h-full">
+      <div className="overflow-hidden cursor-pointer relative group w-full h-full">
         <Image
           className={`object-cover w-full group-hover:scale-110 transition duration-300 ease-in-out ${className}`}
           src={imageUrl}

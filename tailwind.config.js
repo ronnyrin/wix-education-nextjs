@@ -8,13 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'yellow-100': '#ffc657',
-        'blue-100': '#5362ac',
-        'white-15': 'rgba(255,255,255,0.15)',
-        'custom-1': '#FFF9F6',
-        site: 'rgb(255,249,246)',
-      },
       fontSize: {
         12: '12px',
       },

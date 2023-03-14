@@ -11,18 +11,12 @@
 
 @font-face {font-family: "Helvetica-W01-Light"; src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/03805817-4611-4dbc-8c65-0f73031c3973.woff") format("woff");}
 
-@font-face {
-  font-family: "Poppins-SemiBold";
-  font-weight: 700;
-  src: url("//fonts.gstatic.com/s/poppins/v5/aDjpMND83pDErGXlVEr-Sfk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
-}
-
 @layer components {
   .btn-main {
     @apply text-white;
     @apply text-sm;
     @apply font-medium;
-    @apply bg-purple-600;
+    @apply bg-blue-700;
     @apply hover:bg-purple-800;
     @apply focus:outline-none;
     @apply focus:ring-4;
@@ -39,21 +33,16 @@
     @apply hover:bg-gray-400;
   }
 
-  .font-default {
-    font-family: 'Poppins-SemiBold', sans-serif;
-  }
-
   .font-helvetica {
     font-family: Helvetica-W01-Light, sans-serif;
   }
 
   h1, .title {
-    @apply font-default;
-    @apply text-2xl;
+    @apply text-4xl;
+    @apply font-bold;
   }
 
   h2 {
-    @apply font-default;
     @apply text-base;
     @apply sm:text-xl;
   }
@@ -86,16 +75,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
