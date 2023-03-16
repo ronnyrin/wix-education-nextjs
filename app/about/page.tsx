@@ -13,7 +13,7 @@ export default async function About() {
           }}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
+      <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-8 sm:px-20">
         <h1 className="text-center py-8 font-site">About ChoosEquality</h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
@@ -30,7 +30,7 @@ export default async function About() {
           business and what makes you different from your competitors. Make your
           company stand out and show your visitors who you are.
         </p>
-        <div className="justify-center flex gap-6 mt-10">
+        <div className="justify-center flex flex-col sm:flex-row gap-6 mt-10 text-center">
           <a href="" className="btn-main text-lg">
             2035 Financial Statement
           </a>
@@ -38,8 +38,10 @@ export default async function About() {
             Certification Registry
           </a>
         </div>
-        <h2 className="text-center text-4xl my-20 font-site">Our Goals</h2>
-        <div className="flex gap-12 justify-between">
+        <h2 className="text-center text-4xl my-10 sm:my-20 font-site">
+          Our Goals
+        </h2>
+        <div className="flex flex-col sm:flex-row gap-12 justify-between">
           <div className="text-center flex flex-col items-center gap-4">
             <svg
               preserveAspectRatio="xMidYMid meet"

@@ -20,7 +20,7 @@ export default async function News() {
           }}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
+      <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-8 sm:px-20">
         <h1 className="text-center py-8 text-blue-site font-site">
           News & Updates
         </h1>
@@ -29,7 +29,7 @@ export default async function News() {
           easy. Just click “Edit Text” or double click me to add your own
           content and make changes to the font.
         </p>
-        <div className="grid sm:grid-cols-3 gap-7 grid-flow-row mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 grid-flow-row mt-10">
           {items!.map((item) => (
             <div key={item._id} className="relative border">
               <div className="h-[320px] relative">
