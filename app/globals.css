@@ -58,6 +58,16 @@
     font-family: Helvetica-W01-Light, sans-serif;
   }
 
+  .input {
+    @apply block;
+    @apply w-full;
+    @apply border-0;
+    @apply border-b;
+    @apply border-blue-site;
+    @apply focus:outline-none;
+    @apply mb-4;
+  }
+
   h1, .title {
     @apply text-4xl;
     @apply font-bold;
