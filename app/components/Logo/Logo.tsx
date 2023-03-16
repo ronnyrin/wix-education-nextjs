@@ -1,7 +1,7 @@
 export const Logo = () => {
   return (
     <svg
-      className="inline-block"
+      className="inline-block h-5 sm:h-10"
       preserveAspectRatio="xMidYMid meet"
       data-bbox="9.326 77 180.602 46.37"
       viewBox="9.326 77 180.602 46.37"

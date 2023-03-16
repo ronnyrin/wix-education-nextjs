@@ -77,17 +77,6 @@
     @apply text-base;
     @apply sm:text-xl;
   }
-
-  .h-header {
-    @apply h-[60px];
-  }
-
-  .header-line {
-    @apply w-9;
-    @apply h-[2px];
-    @apply bg-black;
-    @apply mb-2;
-  }
 }
 
 html,

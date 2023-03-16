@@ -2,11 +2,11 @@ import './footer.css';
 import { Logo } from '@app/components/Logo/Logo';
 
 const Footer = () => (
-  <footer className="m-h-56 leading-7 p-14 font-site">
-    <div className="flex">
-      <div className="basis-2/3 bg-blue-site text-white p-14 pl-44">
+  <footer className="m-h-56 leading-7 sm:p-14 font-site">
+    <div className="flex flex-col sm:flex-row">
+      <div className="basis-2/3 bg-blue-site text-white p-14 sm:pl-44">
         <h2 className="text-2xl sm:text-3xl font-bold">CONTACT US</h2>
-        <div className="flex text-sm font-helvetica">
+        <div className="flex flex-col sm:flex-row text-sm font-helvetica">
           <div className="basis-1/3 border-b border-white pb-4">
             <p className="mt-10">
               I am a paragraph. Click here to add your own text and edit me.
@@ -37,7 +37,7 @@ const Footer = () => (
         </a>
       </div>
     </div>
-    <div className="mx-auto text-center sm:text-xs">
+    <div className="mx-auto text-center sm:text-xs mt-6">
       <Logo />
       <p className="font-default mb-10">
         © 2035 ChoosEquality. Powered and secured by Wix
