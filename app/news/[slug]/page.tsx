@@ -23,7 +23,7 @@ export default async function New({ params }: any) {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20 text-center">
-        <h1 className="py-8">{item.title}</h1>
+        <h1 className="py-8 font-site">{item.title}</h1>
         <p className="py-6 max-w-3xl text-lg mx-auto">
           {item.short_description}
         </p>

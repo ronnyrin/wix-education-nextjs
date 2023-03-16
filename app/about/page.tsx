@@ -14,7 +14,7 @@ export default async function About() {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
-        <h1 className="text-center py-8">About ChoosEquality</h1>
+        <h1 className="text-center py-8 font-site">About ChoosEquality</h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -38,7 +38,7 @@ export default async function About() {
             Certification Registry
           </a>
         </div>
-        <h2 className="text-center text-4xl my-10">Our Goals</h2>
+        <h2 className="text-center text-4xl my-20 font-site">Our Goals</h2>
         <div className="flex gap-12 justify-between">
           <div className="text-center flex flex-col items-center gap-4">
             <svg
@@ -53,7 +53,7 @@ export default async function About() {
             >
               <g>
                 <path
-                  fill="#00ECA6"
+                  fill="#8751BD"
                   d="M158.417 100c0 32.064-26.111 58.057-58.321 58.057-32.21 0-58.321-25.993-58.321-58.057 0-32.064 26.111-58.057 58.321-58.057 32.21 0 58.321 25.993 58.321 58.057z"
                   data-color="1"
                 ></path>
@@ -69,7 +69,7 @@ export default async function About() {
                 ></path>
               </g>
             </svg>
-            <span className="font-bold">
+            <span className="font-site">
               Spread empathy
               <br /> through education
             </span>
@@ -87,7 +87,7 @@ export default async function About() {
             >
               <g>
                 <path
-                  fill="#00eca6"
+                  fill="#8751BD"
                   d="M160.703 118.25c5.872 25.68-17.082 52.837-51.27 60.654s-66.662-6.664-72.535-32.345 17.082-52.837 51.27-60.654 66.663 6.663 72.535 32.345z"
                   data-color="1"
                 ></path>
@@ -133,12 +133,12 @@ export default async function About() {
                 ></path>
                 <path
                   d="M110 39.2c.6-9-5.2-17.9-12.8-19.8-2.3-.6-4.5-.5-6.5.2l-3.2 1.1.9-.3c-5.1 1.2-9 6.1-9.4 12.8-.3 4.7 1.1 9.4 3.7 13.1 1.4.3 2.7.6 4.2 1.1 4.3 1.2 9.2 3.1 12.8 5l1.8-.6c4.6-1.6 8.1-6.3 8.5-12.6z"
-                  fill="#00eca6"
+                  fill="#8751BD"
                   data-color="1"
                 ></path>
               </g>
             </svg>
-            <span className="font-bold">
+            <span className="font-site">
               Increase donations equally <br /> across 24 countries
             </span>
           </div>
@@ -155,7 +155,7 @@ export default async function About() {
             >
               <g>
                 <path
-                  fill="#00ECA6"
+                  fill="#8751BD"
                   d="M163.3 100c0 34.794-28.161 63-62.9 63s-62.9-28.206-62.9-63 28.161-63 62.9-63 62.9 28.206 62.9 63z"
                   data-color="1"
                 ></path>
@@ -251,7 +251,7 @@ export default async function About() {
                 ></path>
               </g>
             </svg>
-            <span className="font-bold">
+            <span className="font-site">
               Help more children and teens <br /> graduate from high school
             </span>
           </div>

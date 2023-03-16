@@ -11,6 +11,10 @@ module.exports = {
       fontSize: {
         12: '12px',
       },
+      colors: {
+        'purple-site': '#8751BD',
+        'blue-site': '#2859B6',
+      },
       keyframes: {
         fade: {
           '0%': { opacity: 0 },

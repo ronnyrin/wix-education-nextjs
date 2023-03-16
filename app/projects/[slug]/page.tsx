@@ -24,7 +24,7 @@ export default async function Project({ params }: any) {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20 text-center">
-        <h1 className="py-8">{project.title}</h1>
+        <h1 className="py-8 font-site">{project.title}</h1>
         <p className="pt-6 max-w-3xl text-sm mx-auto">
           {project.short_description}
         </p>

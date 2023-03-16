@@ -24,7 +24,7 @@ const StyledNavLink = ({
 }) => (
   <NavLink
     className={`${className ?? ''} ${
-      isActive ? 'text-turquoise-200' : 'hover:text-turquoise-200'
+      isActive ? 'text-purple-site' : 'hover:text-purple-site'
     }`}
     {...linkProps}
   />

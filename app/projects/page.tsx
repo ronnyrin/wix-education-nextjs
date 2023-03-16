@@ -20,7 +20,7 @@ export default async function Projects() {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
-        <h1 className="text-center py-8">Our Projects</h1>
+        <h1 className="text-center py-8 font-site">Our Projects</h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -42,12 +42,12 @@ export default async function Projects() {
                   }}
                 />
               </div>
-              <div className="bg-white mt-[-50px] border-t-4 relative mx-6 px-2 pt-3 border-blue-700 text-center">
-                <h2 className="mb-10">{item.title}</h2>
+              <div className="bg-white mt-[-50px] border-t-4 relative mx-6 px-2 pt-3 border-blue-site text-center">
+                <h2 className="mb-10 font-site">{item.title}</h2>
                 <p className="text-sm mb-6">{item.short_description}</p>
                 <a
                   href={`/projects/${item.slug}`}
-                  className="text-purple-700 py-6"
+                  className="text-purple-site py-6 font-site"
                 >
                   Read More
                 </a>

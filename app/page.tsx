@@ -1,24 +1,29 @@
 import Image from 'next/image';
+import { CarouselClient } from '@app/components/Carousel/Carousel';
 
 export default function Home() {
   return (
-    <div className="mx-auto relative p-20">
+    <div className="mx-auto relative px-20 py-5">
       <div className="text-center w-full relative">
+        <div className="absolute top-0 left-0 h-[817px] w-full bg-black opacity-50"></div>
         <video autoPlay muted loop className="w-full">
           <source
             src="https://video.wixstatic.com/video/0b340f_b4aaabafff194cf6ac9ee5511f58099d/720p/mp4/file.mp4"
             type="video/mp4"
           />
         </video>
-        <div className="absolute top-2/4 left-2/4 text-white translate-y-[-50%] translate-x-[-50%] font-extrabold">
-          <h2 className="text-4xl">FREE & ACCESSIBLE</h2>
-          <h1 className="text-7xl">EDUCATION FOR ALL</h1>
+        <div className="absolute top-2/4 left-2/4 text-white translate-y-[-50%] translate-x-[-50%] font-site">
+          <h2 className="text-4xl mb-4">FREE & ACCESSIBLE</h2>
+          <h1 className="text-[90px] leading-[90px]">EDUCATION FOR ALL</h1>
         </div>
-        <div className="flex relative bg-white mt-[-55px] mx-10 border-t-4 border-blue-700">
+        <div className="flex relative bg-white mt-[-55px] mx-auto max-w-4xl border-t-4 border-blue-site font-site">
           <h3 className="flex-1 text-3xl py-4 px-8 text-left">
             Take action to help us grow
           </h3>
-          <a href="/contact" className="btn-main text-2xl p-8">
+          <a
+            href="/contact"
+            className="btn-main text-2xl p-8 hover:bg-purple-site"
+          >
             DONATE
           </a>
         </div>
@@ -37,14 +42,14 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="border-y-2 border-blue-700 p-8 w-60 relative bg-white mt-[-300px]">
-            <h3 className="text-2xl font-bold">Our Initiatives</h3>
+          <div className="border-y-4 border-blue-site p-8 w-60 relative bg-white mt-[-300px]">
+            <h3 className="text-2xl font-site">Our Initiatives</h3>
             <p className="my-6 text-sm">
               I am a paragraph. Click here to add your own text and edit me.
               It’s easy. Just click “Edit Text” or double click me to add your
               own content and make changes to the font.
             </p>
-            <a href="/projects" className="text-purple-700 py-6">
+            <a href="/projects" className="text-purple-site py-6 font-site">
               Read More
             </a>
           </div>
@@ -61,14 +66,14 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="border-y-2 border-blue-700 p-8 w-60 relative bg-white ml-32 mt-[-430px]">
-            <h3 className="text-2xl font-bold">Our Mission</h3>
+          <div className="border-y-4 border-blue-site p-8 w-60 relative bg-white ml-32 mt-[-430px]">
+            <h3 className="text-2xl font-site">Our Mission</h3>
             <p className="my-6 text-sm">
               I am a paragraph. Click here to add your own text and edit me.
               It’s easy. Just click “Edit Text” or double click me to add your
               own content and make changes to the font.
             </p>
-            <a href="/about" className="text-purple-700 py-6">
+            <a href="/about" className="text-purple-site py-6 font-site">
               Read More
             </a>
           </div>
@@ -87,14 +92,14 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="border-y-2 border-blue-700 p-8 w-60 relative bg-white ml-44 mt-[-200px]">
-            <h3 className="text-2xl font-bold">Recent News</h3>
+          <div className="border-y-4 border-blue-site p-8 w-60 relative bg-white ml-44 mt-[-230px]">
+            <h3 className="text-2xl font-site">Recent News</h3>
             <p className="my-6 text-sm">
               I am a paragraph. Click here to add your own text and edit me.
               It’s easy. Just click “Edit Text” or double click me to add your
               own content and make changes to the font.
             </p>
-            <a href="/news" className="text-purple-700 py-6">
+            <a href="/news" className="text-purple-site py-6 font-site">
               Read More
             </a>
           </div>
@@ -111,52 +116,53 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="border-y-2 border-blue-700 p-8 w-60 relative bg-white ml-32 mt-[-530px]">
-            <h3 className="text-2xl font-bold">Take Part</h3>
+          <div className="border-y-4 border-blue-site p-8 w-60 relative bg-white ml-32 mt-[-530px]">
+            <h3 className="text-2xl font-site">Take Part</h3>
             <p className="my-6 text-sm">
               I am a paragraph. Click here to add your own text and edit me.
               It’s easy. Just click “Edit Text” or double click me to add your
               own content and make changes to the font.
             </p>
-            <a href="/contact" className="text-purple-700 py-6">
+            <a href="/contact" className="text-purple-site py-6 font-site">
               Read More
             </a>
           </div>
         </div>
       </div>
-      <h2 className="text-5xl text-center mb-20">2035 in Numbers</h2>
-      <div className="flex gap-8 justify-between">
+      <h2 className="text-5xl text-center mb-20 font-site">2035 in Numbers</h2>
+      <div className="flex gap-8 justify-between font-site">
         <div className="relative">
-          <span className="text-[200px] block leading-[200px] leading-9 text-purple-500">
+          <span className="text-[200px] block leading-[200px] text-purple-site">
             40K
           </span>
-          <span className="border-t-4 inline-block border-purple-500 text-4xl absolute right-0 top-[173px]">
+          <span className="border-t-4 inline-block border-purple-site text-4xl absolute right-0 top-[190px]">
             Dollars
             <br />
             Raised
           </span>
         </div>
         <div className="relative">
-          <span className="text-[200px] leading-[200px] leading-9 text-purple-500">
+          <span className="text-[200px] leading-[200px] text-purple-site">
             8K
           </span>
-          <span className="border-t-4 inline-block border-purple-500 text-4xl absolute top-[50px] left-[130px] bg-white">
+          <span className="border-t-4 inline-block border-purple-site text-4xl absolute top-[50px] left-[130px] bg-white">
             Graduate
             <br />
             Students
           </span>
         </div>
         <div className="relative">
-          <span className="text-[200px] leading-[200px] leading-9 text-purple-500">
+          <span className="text-[200px] leading-[200px] text-purple-site">
             120
           </span>
-          <span className="border-t-4 inline-block border-purple-500 text-4xl absolute top-[130px] left-[150px] bg-white">
+          <span className="border-t-4 inline-block border-purple-site text-4xl absolute top-[130px] left-[150px] bg-white">
             Technology
             <br />
             Centers
           </span>
         </div>
       </div>
+      <CarouselClient />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="text-blue-700 bg-white">
+      <body className="text-blue-site bg-white">
         <Header />
         <main className="bg-white min-h-[600px]">{children}</main>
         <div className="mt-10 sm:mt-20">

@@ -11,19 +11,36 @@
 
 @font-face {font-family: "Helvetica-W01-Light"; src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/03805817-4611-4dbc-8c65-0f73031c3973.woff") format("woff");}
 
+@font-face {
+  font-display: block;
+  font-family: "Oswald-Medium";
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb31tXRa8TVwTICgirnJhmVJw.woff2") format("woff2"),
+  url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff/s/oswald/v16/dI-qzxlKVQA6TUC5RKSb3z8E0i7KZn-EPnyo3HZu7kw.woff") format("woff")
+}
+@font-face {
+  font-display: block;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/oswald/v29/TK3iWkUHHAIjg752FD8Gl-1PK62t.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
 @layer components {
   .btn-main {
     @apply text-white;
     @apply text-sm;
     @apply font-medium;
-    @apply bg-blue-700;
+    @apply bg-blue-site;
+    @apply font-site;
     @apply hover:bg-purple-800;
     @apply focus:outline-none;
     @apply focus:ring-4;
     @apply focus:ring-gray-300;
     @apply rounded-none;
-    @apply px-5;
-    @apply py-2;
+    @apply px-6;
+    @apply py-3;
   }
 
   .btn-main[disabled] {
@@ -31,6 +48,10 @@
     @apply bg-gray-400;
     @apply border-gray-400;
     @apply hover:bg-gray-400;
+  }
+
+  .font-site {
+    font-family: Oswald-Medium,Oswald, sans-serif;
   }
 
   .font-helvetica {

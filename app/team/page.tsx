@@ -22,7 +22,7 @@ export default async function Team() {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
-        <h1 className="text-center py-8 text-blue-800">Our Team</h1>
+        <h1 className="text-center py-8 text-site font-site">Our Team</h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -44,15 +44,17 @@ export default async function Team() {
                   }}
                 />
               </div>
-              <div className="bg-white mt-[-50px] border-t-4 relative mx-6 px-2 pt-3 border-blue-700 text-center">
-                <h2 className="mb-10">{item.name}</h2>
+              <div className="bg-white mt-[-50px] border-t-4 relative mx-6 px-2 pt-3 border-blue-site text-center">
+                <h2 className="mb-10 font-site">{item.name}</h2>
                 <p className="text-sm mb-6">{item.about}</p>
                 <span>{item.email}</span>
               </div>
             </div>
           ))}
         </div>
-        <h1 className="text-center py-8 text-blue-800 mt-8">Our Volunteers</h1>
+        <h1 className="text-center py-8 text-blue-site mt-8 font-site">
+          Our Volunteers
+        </h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -64,7 +66,7 @@ export default async function Team() {
           {volunteers!.map((item) => (
             <div key={item._id} className="p-4 relative">
               <div className="bg-white mt-[-50px] relative mx-6 px-2 py-5 text-center">
-                <h2 className="mb-10 font-extrabold text-blue-800">
+                <h2 className="mb-10 font-extrabold text-blue-site font-site">
                   {item.name}
                 </h2>
                 <p className="text-sm mb-6">{item.about}</p>

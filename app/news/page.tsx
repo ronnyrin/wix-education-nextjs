@@ -21,7 +21,9 @@ export default async function News() {
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-20">
-        <h1 className="text-center py-8 text-blue-800">News & Updates</h1>
+        <h1 className="text-center py-8 text-blue-site font-site">
+          News & Updates
+        </h1>
         <p className="pt-6 max-w-3xl text-sm text-center mx-auto">
           I am a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
@@ -40,14 +42,17 @@ export default async function News() {
                     objectFit: 'cover',
                   }}
                 />
-                <span className="bg-blue-700 text-white px-6 py-2 absolute bottom-[-20px]">
+                <span className="bg-blue-site text-white px-6 py-2 absolute bottom-[-20px]">
                   {formatDate(new Date(item.date))}
                 </span>
               </div>
               <div className="bg-white relative mt-10 px-8 pb-10">
-                <h2 className="mb-10">{item.title}</h2>
+                <h2 className="mb-10 font-site">{item.title}</h2>
                 <p className="text-sm mb-6">{item.short_description}</p>
-                <a href={`/news/${item.slug}`} className="text-purple-700 py-6">
+                <a
+                  href={`/news/${item.slug}`}
+                  className="text-purple-site py-6 font-site"
+                >
                   Read More
                 </a>
               </div>
