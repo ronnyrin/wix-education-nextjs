@@ -1,5 +1,4 @@
 import { getWixClient } from '@app/hooks/useWixClientServer';
-import Image from 'next/image';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 
 export default async function Project({ params }: any) {
@@ -13,14 +12,11 @@ export default async function Project({ params }: any) {
   return (
     <div className="relative">
       <div className="w-full h-[400px] relative">
-        <Image
-          src={project.cover}
-          fill={true}
+        <WixMediaImage
+          media={project.cover}
           alt={project.title}
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-          }}
+          objectFit="cover"
+          disableZoom={true}
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-8 sm:px-20 text-center">
@@ -34,7 +30,7 @@ export default async function Project({ params }: any) {
         <a href="" className="btn-main">
           Donate
         </a>
-        <div className="grid sm:grid-cols-3 gap-5 grid-flow-row mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 grid-flow-row mt-10">
           {project.gallery?.map((image: any, i: number) => (
             <div key={i} className="p-4 relative">
               <WixMediaImage media={image.src} width={500} />

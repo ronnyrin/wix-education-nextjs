@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { getWixClient } from '@app/hooks/useWixClientServer';
+import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 export default async function Team() {
   const wixClient = await getWixClient();
   const { items: team } = await wixClient.data.query({
@@ -11,14 +11,11 @@ export default async function Team() {
   return (
     <div className="relative">
       <div className="w-full h-[400px] relative">
-        <Image
-          src="https://static.wixstatic.com/media/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg/v1/fill/w_1920,h_492,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg"
-          fill={true}
+        <WixMediaImage
+          media="https://static.wixstatic.com/media/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg/v1/fill/w_1920,h_492,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg"
           alt="projects"
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-          }}
+          objectFit="cover"
+          disableZoom={true}
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-8 sm:px-20">
@@ -34,14 +31,10 @@ export default async function Team() {
           {team!.map((item) => (
             <div key={item._id} className="p-4 relative">
               <div className="w-[300px] h-[220px] relative">
-                <Image
-                  src={item.image}
-                  fill={true}
+                <WixMediaImage
+                  media={item.image}
                   alt={item.name}
-                  sizes="100vw"
-                  style={{
-                    objectFit: 'cover',
-                  }}
+                  objectFit="cover"
                 />
               </div>
               <div className="bg-white sm:mt-[-50px] border-t-4 relative mx-6 px-2 pt-3 border-blue-site text-center">

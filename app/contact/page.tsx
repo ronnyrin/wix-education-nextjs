@@ -1,16 +1,13 @@
-import Image from 'next/image';
+import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 export default async function Page() {
   return (
     <div className="relative">
       <div className="w-full h-[400px] relative">
-        <Image
-          src="https://static.wixstatic.com/media/0b340f_a5c250a81aed4d7fa68e005cff2132c8~mv2_d_3840_1960_s_2.jpg/v1/fill/w_3456,h_984,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0b340f_a5c250a81aed4d7fa68e005cff2132c8~mv2_d_3840_1960_s_2.jpg"
-          fill={true}
+        <WixMediaImage
+          media="https://static.wixstatic.com/media/0b340f_a5c250a81aed4d7fa68e005cff2132c8~mv2_d_3840_1960_s_2.jpg/v1/fill/w_3456,h_984,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0b340f_a5c250a81aed4d7fa68e005cff2132c8~mv2_d_3840_1960_s_2.jpg"
           alt="projects"
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-          }}
+          objectFit="cover"
+          disableZoom={true}
         />
       </div>
       <div className="max-w-7xl mx-auto mt-[-120px] relative bg-white px-8 sm:px-20">
