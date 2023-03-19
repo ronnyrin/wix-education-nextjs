@@ -55,8 +55,8 @@ async function main() {
                 type: 'IMAGE',
               },
               {
-                key: 'short_description',
-                display_name: 'Short Description',
+                key: 'long_description',
+                display_name: 'Long Description',
                 type: 'TEXT',
               },
             ],
@@ -78,6 +78,20 @@ async function main() {
               ...descriptions,
               cover:
                 'https://static.wixstatic.com/media/84770f_878098e5beb14c1aadfe0539d9ac7f82~mv2_d_5760_3840_s_4_2.jpg',
+              gallery: [
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_47227c4902b24f82a2e0c31c6a7b43e9~mv2_d_6144_4080_s_4_2.jpeg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_73596efb22404db79ae0509483011f11~mv2_d_5500_3668_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_63ddb02c4fb8422aba47f763daacf20f~mv2_d_7360_4912_s_4_2.jpg',
+                  type: 'image',
+                },
+              ],
             },
             {
               slug: 'adopt-a-student',
@@ -85,6 +99,20 @@ async function main() {
               ...descriptions,
               cover:
                 'https://static.wixstatic.com/media/0b340f_12ead601f2dc4867a7bf09ce72ebad64~mv2_d_5184_3456_s_4_2.jpg',
+              gallery: [
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_500d58b4817543fa9332a5c8cd16da9b~mv2_d_4992_3328_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_12a3df7a305e4da1953de653b51ec53f~mv2_d_8660_5773_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_afa281ea9c5140068ebc823b6204c220~mv2_d_3491_2327_s_2.jpg',
+                  type: 'image',
+                },
+              ],
             },
             {
               title: 'Transportation for Youth',
@@ -92,6 +120,20 @@ async function main() {
               ...descriptions,
               cover:
                 'https://static.wixstatic.com/media/84770f_02295d8cd2e24277aa38c26a150c3aaa~mv2_d_5760_3840_s_4_2.jpeg',
+              gallery: [
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_08df6332d70b4ce687f7dcc0cf7da2d5~mv2_d_3000_2000_s_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_36f008b11e494ff98dd0e1119bb7cbaf~mv2_d_5760_3840_s_4_2.jpeg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_5301c9dc5d5048798f13c3f5ce287ead~mv2_d_3577_2355_s_2.jpg',
+                  type: 'image',
+                },
+              ],
             },
             {
               title: 'English for All',
@@ -99,6 +141,20 @@ async function main() {
               ...descriptions,
               cover:
                 'https://static.wixstatic.com/media/84770f_8728d6e0d6404b9d97f1ccdbd30ffe3c~mv2_d_5760_3840_s_4_2.jpg',
+              gallery: [
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_2a8a650b4d434a7d9b023e1df6e23325~mv2_d_4592_2584_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_d146a1cff38b4503ae5e6ccc9aa86368~mv2_d_5184_3456_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_83c0234815c84000a3b5a658270b89aa~mv2_d_4356_3083_s_4_2.jpg',
+                  type: 'image',
+                },
+              ],
             },
             {
               title: 'Literacy Development',
@@ -106,6 +162,20 @@ async function main() {
               ...descriptions,
               cover:
                 'https://static.wixstatic.com/media/84770f_6e4797d2cf2b488fadc208485986bfdd~mv2_d_4395_2933_s_4_2.jpg',
+              gallery: [
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_e1620d766d04493fb170fe9d2a7b1650~mv2_d_8192_5462_s_4_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_9d7d78f243ed44cbbf0cb5b5d185a6b7~mv2_d_2560_1440_s_2.jpg',
+                  type: 'image',
+                },
+                {
+                  src: 'https://static.wixstatic.com/media/0b340f_a1f0f223bd694e468f47433a0f274afb~mv2_d_4896_3264_s_4_2.jpg',
+                  type: 'image',
+                },
+              ],
             },
           ],
         },
